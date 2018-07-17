@@ -24,14 +24,10 @@ class router{
    			$index = '/modules/admin/tables.php';
     	break;
 		case (strripos($_SERVER["REDIRECT_URL"],"recipe-") !== false && preg_match("/^\/recipe-[0-9\d]*\/$/i", $_SERVER["REDIRECT_URL"])):
-			//if (preg_match("/^\/recipe-[0-9\d]*\/$/i", $_SERVER["REDIRECT_URL"])){
    				$index = '/recipes/detail.php';
-			//}
     	break;
 		case (strripos($_SERVER["REDIRECT_URL"],"sovet-") !== false && preg_match("/^\/sovet-[0-9\d]*\/$/i", $_SERVER["REDIRECT_URL"])):
-			//if (preg_match("/^\/recipe-[0-9\d]*\/$/i", $_SERVER["REDIRECT_URL"])){
    				$index = '/sovety/detail.php';
-			//}
     	break;
 		case (strripos($_SERVER["REDIRECT_URL"],"ovosh-") !== false && preg_match("/^\/ovosh-[0-9\d]*\/$/i", $_SERVER["REDIRECT_URL"])):
    				$index = '/produkty/ovoshchi/detail.php';
