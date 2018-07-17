@@ -9,6 +9,5 @@ foreach ($mass as $key => $item) {
 */
 //echo"<PRE>"; print_r((array)$languages); echo"</PRE>";
 //phpinfo();
-// test test test
 echo "Здравствуйте! Ваш IP адрес: ".$_SERVER["REMOTE_ADDR"];
 ?>
